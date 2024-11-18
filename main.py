@@ -12,7 +12,7 @@ dp = Dispatcher()
 @dp.message(Command('start'))
 async def start_handler(message: types.Message):
     name = message.from_user.first_name
-    msg = f'Привет, {name}!'
+    msg = f'Привет, {name}!Ведите одну из команд : myinfo; random; start;'
     await message.answer(msg)
 
 
@@ -28,7 +28,7 @@ thenames = ["Иван", "Анна", "Максим", "Елена", "Дмитри�
 @dp.message(Command('random'))
 async def randomchoise_handler(message: types.Message):
     random_name = random.choice(thenames) 
-    bot.send_message(message.chat.id, f"Случайное имя: {random_name}")
+    await bot.send_message(message.chat.id, f"Случайное имя: {random_name}")
 
 
 
