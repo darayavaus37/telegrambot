@@ -17,7 +17,7 @@ async def start(message: types.Message):
                 ),
                 types.InlineKeyboardButton(
                     text="инстаграм друга",
-                    url="https://www.instagram.com/kkanybek_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    url="https://www.instagram.com/_ladyrasta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 )
             ]
         ]
