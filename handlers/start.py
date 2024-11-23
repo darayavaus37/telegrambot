@@ -4,6 +4,13 @@ from aiogram.fsm.context import FSMContext
 
 start_kb = Router()
 
+
+kb = types.InlineKeyboardMarkup(inline_keyboard=[ 
+    [types.InlineKeyboardButton(text='review' , 
+callback_data = 'review')]
+])
+
+
 @start_kb.message(Command("start"))
 async def start(message: types.Message):
     msg = message.from_user
